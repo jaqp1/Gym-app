@@ -17,11 +17,12 @@ function App() {
       }
       let newWorkout = generateWorkout({poison, muscles, goal})
       setWorkout(newWorkout)
+      setTimeout(() => { window.location.href = '#workout' }, 1)
   }
 
 
   return (
-    <main className='min-h-screen flex flex-col bg-gradient-to-r from-slate-800 to-slate-950 text-white text-sm sm:text-base'>
+    <main className='min-h-screen flex flex-col bg-gradient-to-r from-scheme1-400 to-scheme1-600 text-white text-sm sm:text-base'>
       <Hero></Hero>
       <Generator 
       poison={poison} 
